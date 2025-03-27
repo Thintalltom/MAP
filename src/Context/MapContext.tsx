@@ -1,6 +1,8 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { LatLngTuple } from "leaflet";
 import {  useMap } from "react-leaflet";
+import Ngn from '@/assets/svg/NGN.svg'
+import Ghs from '@/assets/svg/GH.svg'
 const AfricaMapContext = createContext<any>(null);
 
 interface MapDataProps {
@@ -10,11 +12,10 @@ interface MapDataProps {
  export const MapDataProvider: React.FC<MapDataProps> = ({ children }) => {
   const countryInfo: Record<
   string,
-  { capital: string; population: string; currency: string }
+  { capital: string; Tariff: string; currency: string; countryimg: string, quote: string, Mfn: string, non: string, aftc: string }
 > = {
-  Nigeria: { capital: "Abuja", population: "206M", currency: "Naira (NGN)" },
-  Ghana: { capital: "Accra", population: "31M", currency: "Cedi (GHS)" },
-  Kenya: { capital: "Nairobi", population: "54M", currency: "Shilling (KES)" },
+  Nigeria: { capital: "Nigeria", Tariff: "12.3% (Average)", currency: "Naira (NGN)", countryimg: Ngn, quote:'(NG)', Mfn: '10.4%', non: "$5  Per Unit", aftc: "5%"  },
+  Ghana: { capital: "Accra", Tariff: "12.3% (Average)", currency: "Cedi (GHS)", countryimg: Ghs, quote:'(GHS)', Mfn: '10.4%', non: "$5  Per Unit", aftc: "5%"  },
 };
 
 const africaBounds: [[number, number], [number, number]] = [
@@ -40,8 +41,8 @@ const colorGroups: Record<string, string[]> = {
     "Sudan",
     "South Africa",
     "Zimbabwe",
-    "Democratic Republic of the Congo",
-    "Burkina Faso",
+    "Dem. Rep. of Congo",
+    "B. Faso",
     "Republic of Congo",
     "Benin",
   ],

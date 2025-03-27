@@ -38,6 +38,7 @@ const HomeMap = () => {
           data={africa as GeoJsonObject}
           style={getCountryStyle}
           onEachFeature={onEachFeature}
+         
         />
       </MapContainer>
     </div>

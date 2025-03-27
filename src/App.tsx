@@ -2,7 +2,7 @@
 import Screen from "./Screen/Screen";
 function App() {
   return (
-    <div className="">
+    <div className="font-nunito">
       <Screen />
     </div>
   );

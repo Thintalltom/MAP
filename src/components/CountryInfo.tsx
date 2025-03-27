@@ -10,20 +10,8 @@ const CountryInfo = () => {
     <div className=" w-[35vw]  h-[75vh] ">
         <div className="h-[82%] ">
         {selectedCountry ? (
-        <div className="h-[90%] w-[331.59px] shadow-sm bg-[#FFFFFF] border-[0.89px] rounded-[17.73px]">
-          <h2>{selectedCountry}</h2>
-          <p>
-            <strong>Capital:</strong>{" "}
-            {countryInfo[selectedCountry]?.capital || "Unknown"}
-          </p>
-          <p>
-            <strong>Population:</strong>{" "}
-            {countryInfo[selectedCountry]?.population || "Unknown"}
-          </p>
-          <p>
-            <strong>Currency:</strong>{" "}
-            {countryInfo[selectedCountry]?.currency || "Unknown"}
-          </p>
+        <div className="h-[90%] w-[331.59px] shadow-sm bg-[#FFFFFF] border-[0.89px] rounded-[23.13px] p-[18.51px] flex flex-col gap-[27.76px]">
+          <img src={countryInfo[selectedCountry]?.countryimg} alt='country image' className="w-[49.7px] h-[37.3px]" />
         </div>
       ) : (
         <div className=" h-[100%] flex  flex-col ">
