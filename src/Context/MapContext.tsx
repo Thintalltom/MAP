@@ -12,10 +12,10 @@ interface MapDataProps {
  export const MapDataProvider: React.FC<MapDataProps> = ({ children }) => {
   const countryInfo: Record<
   string,
-  { capital: string; Tariff: string; currency: string; countryimg: string, quote: string, Mfn: string, non: string, aftc: string }
+  { capital: string; Tariff: string; currency: string; countryimg: string, quote: string, Mfn: string, non: string, aftc: string, Tariff2: string }
 > = {
-  Nigeria: { capital: "Nigeria", Tariff: "12.3% (Average)", currency: "Naira (NGN)", countryimg: Ngn, quote:'(NG)', Mfn: '10.4%', non: "$5  Per Unit", aftc: "5%"  },
-  Ghana: { capital: "Accra", Tariff: "12.3% (Average)", currency: "Cedi (GHS)", countryimg: Ghs, quote:'(GHS)', Mfn: '10.4%', non: "$5  Per Unit", aftc: "5%"  },
+  Nigeria: { capital: "Nigeria", Tariff: "12.3% (Average)", currency: "Naira (NGN)", countryimg: Ngn, quote:'(NG)', Mfn: '10.4%', non: "$5  Per Unit", aftc: "5%", Tariff2:"12.3%"  },
+  Ghana: { capital: "Accra", Tariff: "12.3% (Average)", currency: "Cedi (GHS)", countryimg: Ghs, quote:'(GHS)', Mfn: '10.4%', non: "$5  Per Unit", aftc: "5%", Tariff2:"12.3%"  },
 };
 
 const africaBounds: [[number, number], [number, number]] = [

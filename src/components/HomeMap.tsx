@@ -11,8 +11,8 @@ const HomeMap = () => {
   const { center, FitMapBounds, getCountryStyle, onEachFeature } =
     useAfricaMap();
   return (
-    <div className=" flex justify-center    w-[951px]   h-[500px] py-[2%] ">
-      <div className=" relative left-[3%]">
+    <div className=" grid grid-cols-2   w-[951px]   h-[500px] py-[2%] ">
+      <div className="">
         <CountryInfo />
       </div>
 
@@ -23,8 +23,12 @@ const HomeMap = () => {
           width: "100%",
           maxWidth: "500px",
           background: "transparent",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          
         }}
-        className=" relative right-[3%]"
+        className=" "
         zoomControl={false}
         attributionControl={false}
         dragging={false}
