@@ -21,7 +21,7 @@ const HomeMap = () => {
         center={center}
         style={{
           width: "100%",
-          maxWidth: "500px",
+          maxWidth: "800px",
           background: "transparent",
           display: "flex",
           justifyContent: "center",
